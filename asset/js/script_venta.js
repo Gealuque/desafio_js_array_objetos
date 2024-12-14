@@ -1,6 +1,5 @@
 
 // Arreglo de Datos en Venta
-
 const p_venta = [
     {
         nombre: 'Apartamento de lujo en zona exclusiva',
@@ -38,16 +37,37 @@ const p_venta = [
         descripcion: 'Esta hermosa casa está rodeada por un bosque a 10km de la ciudad, dando la sensasión de tranquildad y comodidad',
         ubicacion: 'Fanshawe Pioneer Village, City Ville, CA 67890',
         habitaciones: 4,
+        banios: 2,
         costo: 4300,
         smoke:false,
         pets:true 
+    },{
+        nombre: 'Casa con amplio jardín',
+        src: './asset/img/casa_1_piso.jpg',
+        descripcion: 'Esta casa está recien remodelada, en un terreo de 300 metros cuadrados, los cuales se comparten en 280mt cuadrados de construcción y el restante en jardín',
+        ubicacion: 'Angeles National Forest, Arcadia, CA 98765',
+        habitaciones: 4,
+        banios: 3,
+        costo: 3800,
+        smoke:true,
+        pets:true
+    },{
+        nombre: 'Apartamento Moderno',
+        src: './asset/img/apartamento_amoblado.jpg',
+        descripcion: 'Esta hermoso apartamento está totalmente amoblado, sus dueños tenían un exquisito gusto por el arte',
+        ubicacion: 'Angolo estate winery, Newberg,OR, CA 98405',
+        habitaciones: 2,
+        banios: 1,
+        costo: 8300,
+        smoke:false,
+        pets:false
     }
 ]
 
 // Inicio de pintado y condiciones
 
 const casa_venta = document.querySelector('#venta');
-
+let pintarhtml = ''
 
 const textoFumar = (fumar) =>{
     if(fumar === true){
@@ -67,9 +87,6 @@ const textMascota = (mascota) =>{
     }
     return msj2
 }
-
-let pintarhtml = ''
-
 
 //Casas en Venta
 

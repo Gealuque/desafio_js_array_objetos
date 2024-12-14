@@ -76,8 +76,6 @@ const casa_alquiler = document.querySelector('#alquilerindex');
 const boton_1 = document.querySelector('#boton_1')
 const boton_2 = document.querySelector('#boton_2')
 
-let msj = ''
-let msj2 = ''
 let pintarhtml =''
 let pintarhtml2 =''
 

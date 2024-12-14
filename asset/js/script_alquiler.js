@@ -40,14 +40,32 @@ const p_alquiler = [
         costo: 6000,
         smoke:false,
         pets:true 
-    }
+    },{
+            nombre: 'Casa de Paso',
+            src: './asset/img/casa_paso.jpg',
+            descripcion: 'Pequeña pero comoda casa para pasar una o dos noches, cerca a la ruta 78',
+            ubicacion: 'Merideon Mountain, Ruta 78, CA 328',
+            habitaciones: 1,
+            banios: 1,
+            costo: 500,
+            smoke:false,
+            pets:false 
+    },{
+        nombre: 'Casa de Descanso',
+        src: './asset/img/casa_descanso.jpg',
+        descripcion: 'Si buscas relajarte y pasar unos días de descanso, con un clima tropical con la piscina frente a tus pies, este es tu lugar',
+        ubicacion: 'Tropic street, California, CA 12313',
+        habitaciones: 3,
+        banios: 2,
+        costo: 2500,
+        smoke:true,
+        pets:true 
+}
 ]
 
 
 const casa_alquiler = document.querySelector('#alquiler');
 let pintarhtml = ''
-let msj = ''
-let msj2 = ''
 
 const textoFumar = (fumar) =>{
     if(fumar === true){
